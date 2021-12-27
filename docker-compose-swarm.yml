@@ -20,3 +20,7 @@ services:
         - "traefik.http.services.STACK_NAME.loadbalancer.server.scheme=http"
     networks:
       - traefik-public
+
+networks:
+  traefik-public:
+    external: true
