@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('jenkins-libraries')_
+@Library('jenkins-libraries@dev')_
 
 pipeline {
     agent {
@@ -52,7 +52,7 @@ pipeline {
                         "TRAEFIK_HOST:      ${TRAEFIK_HOST}\n"
                 sendDiscord("${DISCORD_ID}", "Dev Deploy Started")
                 updateCompose("${COMPOSE_FILE}", "STACK_NAME", "${STACK_NAME}")
-                stackPush("${COMPOSE_FILE}")
+                stackPush("${COMPOSE_FILE}", build_args="--no-cache")
                 stackDeploy("${COMPOSE_FILE}", "${STACK_NAME}")
                 sendDiscord("${DISCORD_ID}", "Dev Deploy Finished")
             }
@@ -74,7 +74,7 @@ pipeline {
                         "TRAEFIK_HOST:      ${TRAEFIK_HOST}\n"
                 sendDiscord("${DISCORD_ID}", "Prod Deploy Started")
                 updateCompose("${COMPOSE_FILE}", "STACK_NAME", "${STACK_NAME}")
-                stackPush("${COMPOSE_FILE}")
+                stackPush("${COMPOSE_FILE}", build_args="--no-cache")
                 stackDeploy("${COMPOSE_FILE}", "${STACK_NAME}")
                 sendDiscord("${DISCORD_ID}", "Prod Deploy Finished")
             }
