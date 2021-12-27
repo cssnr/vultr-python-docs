@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   nginx:
-    build: ./nginx
+    build: .
     image: registry.hosted-domains.com/shane/vultr-python-docs:${VERSION}
     deploy:
       mode: global
