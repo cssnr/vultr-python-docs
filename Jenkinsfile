@@ -66,7 +66,7 @@ pipeline {
             }
             environment {
                 STACK_NAME = "prod-${SERVICE_NAME}"
-                TRAEFIK_HOST = "`djboiler.sapps.me`"
+                TRAEFIK_HOST = "`vultr-python.sapps.me`"
             }
             steps {
                 echo "\n--- Starting Prod Deploy ---\n" +
