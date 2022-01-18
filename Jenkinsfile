@@ -4,7 +4,7 @@
 
 pipeline {
     agent {
-        label 'manager'
+        label 'jenkins-slave-docker'
     }
     options {
         buildDiscarder(logRotator(numToKeepStr:'5'))
