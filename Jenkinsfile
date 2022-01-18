@@ -11,7 +11,7 @@ pipeline {
         timeout(time: 1, unit: 'HOURS')
     }
     environment {
-        DISCORD_ID = "smashed-alerts"
+        DISCORD_ID = "discord-hook-smashed"
         COMPOSE_FILE = "docker-compose-swarm.yml"
 
         BUILD_CAUSE = getBuildCause()
