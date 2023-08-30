@@ -1,10 +1,11 @@
 [![Discord](https://img.shields.io/discord/899171661457293343?color=7289da&label=discord&logo=discord&logoColor=white&style=flat)](https://discord.gg/wXy6m2X8wY)
+[![GitHub Pages](https://github.com/cssnr/vultr-python-docs/actions/workflows/build.yaml/badge.svg)](https://github.com/cssnr/vultr-python-docs/actions/workflows/build.yaml)
 # vultr-python Docs
 
-**Doc Site**: [https://vultr-python.sapps.me](https://vultr-python.sapps.me)
+**Doc Site**: [https://cssnr.github.io/vultr-python-docs/vultr.html](https://cssnr.github.io/vultr-python-docs/vultr.html)
 
 **vultr-python**: [https://github.com/cssnr/vultr-python](https://github.com/cssnr/vultr-python)
 
 ## Building
 
-Refer to the [Dockerfile](Dockerfile) file.
+Use the Workflow Dispatch option: https://github.com/cssnr/vultr-python-docs/actions/workflows/build.yaml
