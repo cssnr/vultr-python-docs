@@ -2,7 +2,7 @@
 [![GitHub Pages](https://github.com/cssnr/vultr-python-docs/actions/workflows/build.yaml/badge.svg)](https://github.com/cssnr/vultr-python-docs/actions/workflows/build.yaml)
 # vultr-python Docs
 
-**Doc Site**: [https://cssnr.github.io/vultr-python-docs/vultr.html](https://cssnr.github.io/vultr-python-docs/vultr.html)
+**Doc Site**: [https://cssnr.github.io/vultr-python-docs/](https://cssnr.github.io/vultr-python-docs/)
 
 **vultr-python**: [https://github.com/cssnr/vultr-python](https://github.com/cssnr/vultr-python)
 
