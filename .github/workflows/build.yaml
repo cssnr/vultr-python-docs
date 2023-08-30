@@ -41,11 +41,11 @@ jobs:
           python -m pip install -r app/requirements.txt
           python -m pdoc -o build vultr-python/vultr.py
 
-      - name: "Upload Artifact"
-        uses: actions/upload-artifact@v3
-        with:
-          name: github-pages
-          path: build/
+#      - name: "Upload Artifact"
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: github-pages
+#          path: _site/
 
       - name: "Update Permissions"
         run: |
